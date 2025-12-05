@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home Page</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Logo */
+.logo {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 1000;
+    border: 2px solid white;
+}
+
+/* Header with background image and top links */
+header {
+    position: relative;
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: bgSlide 15s infinite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+
+@keyframes bgSlide {
+    0% { background-image: url('https://raw.githubusercontent.com/parinarai-crypto/My-website/main/Picture%20for%20home/pexels-suissounet-2101187.jpg'); }
+    25% { background-image: url('https://raw.githubusercontent.com/parinarai-crypto/My-website/main/Picture%20for%20home/pexels-todd-trapani-488382-1420440.jpg'); }
+    50% { background-image: url('https://raw.githubusercontent.com/parinarai-crypto/My-website/main/Picture%20for%20home/pexels-ssasanka-2240000.jpg'); }
+    75% { background-image: url('https://raw.githubusercontent.com/parinarai-crypto/My-website/main/Picture%20for%20home/pexels-bella-white-201200-635279.jpg'); }
+    100% { background-image: url('https://raw.githubusercontent.com/parinarai-crypto/My-website/main/Picture%20for%20home/pexels-iriser-673857.jpg'); }
+}
+
+/* Top links inside header */
+nav.top-nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 10px;
+}
+
+nav.top-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+nav.top-nav a:hover {
+    color: #4CAF50;
+}
+
+/* Layout */
+.container {
+    display: flex;
+}
+
+/* Sidebar links */
+.sidebar {
+    width: 220px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: fixed;
+    top: 200px; /* start below header */
+    left: 0;
+    margin-right: 5 px;
+}
+
+.sidebar a {
+    color: black;
+    text-decoration: dotted;
+    padding: 12px 20px;
+    display: block;
+    font-weight: bold;
+}
+
+.sidebar a:hover {
+    color: #4CAF50;
+}
+
+/* Main content */
+.main {
+    margin-left: 220px; /* space for sidebar */
+    padding: 20px;
+    margin-top: 0px; /* below header */
+}
+
+/* Exercise cards */
+/* Section styling */
+.exercise-container {
+   display: flex;           /* horizontal layout */
+   flex-wrap: wrap;         /* wrap to next line if needed */
+   gap: 10px;
+   margin-top: 0px;        /* space from section above */
+}
+
+
+.exercise-card {
+   width: 290px;
+   height: 320px;           /* total card height */
+   background-color: #ffffff;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+}
+
+
+.exercise-card img {
+   width: 100%;
+   height: 200px;           /* top half of card */
+   object-fit: cover;       /* fill space without stretching */
+   border-radius: 8px 8px 0 0; /* round top corners */
+}
+
+
+.exercise-card p {
+   margin: 10px;            /* spacing below image */
+   font-weight: bold;
+   color: #333;
+}
+
+
+/* Section styling */
+section {
+   margin-top: 0px;
+   text-align: left;
+   color: #1b1a1a;
+   font-size: 18px;
+   margin-bottom: 0;
+}
+
+
+</style>
+</head>
+<body>
+
+<!-- Logo -->
+<a href="jus.html">
+    <img src="https://raw.githubusercontent.com/parinarai-crypto/My-website/main/Picture%20for%20home/FullLogo.jpg" class="logo" alt="Logo">
+</a>
+
+<!-- Header with background image -->
+<header>
+    <!-- Top links inside header -->
+    <nav class="top-nav">
+        <a href="Home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<!-- Section -->
+<section>
+    <pre>                   
+        <h2>                Explore and Be Healthy</h2>
+        <p>                         Be yourself and believe in yourself.</p>
+        <style>
+            h2{
+                margin: 0;
+            }
+            p{
+                margin: 0;
+            }
+        </style>
+    </pre>
+
+</section>
+
+<div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="Sunset.html">Sunset</a>
+        <a href="Cities.html"> Cities</a>
+        <a href="Ocean.html">Ocean</a>
+        <a href="Mountain.html">Mountain</a>
+        <a href="Forest.html">Forest</a>
+        <a href="Flower.html">Flower Garden</a>
+        
+
+        
+    </div>
+
+    <!-- Main content -->
+    <div class="main">
+        <div class="exercise-container">
+            <div class="exercise-card">
+                <a href="https://www.pinterest.com/search/pins/?q=paris&rs=typed">
+                   <img src="https://raw.githubusercontent.com/parinarai-crypto/My-website/main/Picture%20for%20home/For%20city%20picture/Paris.jpg" alt="bali">
+                </a>
+                <p style="font-size: 20px; line-height: 10px; text-align: left;">Paris</p>
+                <p style="line-height: 10px; text-align: left;">France , City view 🌃</p> 
+            </div>
+        <div class="exercise-container">
+            <div class="exercise-card">
+                <a href="https://www.pinterest.com/search/pins/?q=Kyoto%20Japan&rs=typed">
+                   <img src="https://raw.githubusercontent.com/parinarai-crypto/My-website/main/Picture%20for%20home/For%20city%20picture/kyoto.jpg" alt="bali">
+                </a>
+                <p style="font-size: 20px; line-height: 10px; text-align: left;">Kyoto Town</p>
+                <p style="line-height: 10px; text-align: left;">Japan , City view 🌸</p> 
+            </div>
+         <div class="exercise-container">
+            <div class="exercise-card">
+                <a href="https://www.pinterest.com/search/pins/?q=rome%20italy&rs=ac&len=4&source_id=ac_4mgZu2no&eq=Rome&etslf=1015">
+                   <img src="https://raw.githubusercontent.com/parinarai-crypto/My-website/main/Picture%20for%20home/For%20city%20picture/rome.jpg" alt="bali">
+                </a>
+                <p style="font-size: 20px; line-height: 10px; text-align: left;">Rome</p>
+                <p style="line-height: 10px; text-align: left;">Italy , City view 🏛️</p> 
+            </div>
+         <div class="exercise-container">
+            <div class="exercise-card">
+                <a href="https://www.pinterest.com/search/pins/?q=Venice&rs=typed">         
+                <img src="https://raw.githubusercontent.com/parinarai-crypto/My-website/main/Picture%20for%20home/For%20city%20picture/venice.jpg">
+            
+                </a>
+                <p style="font-size: 20px; line-height: 10px; text-align: left;">venice</p>
+                <p style="line-height: 10px; text-align: left;">Italy , City view 🌊</p> 
+            </div>
+        
+            </div>
+      
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+    
+    
+
+
+    
+
+   
+
+        
+        
+
+    
+    
+
+    
+    
+        
+
+        
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
